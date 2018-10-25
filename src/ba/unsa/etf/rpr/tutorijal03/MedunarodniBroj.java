@@ -12,7 +12,9 @@ public class MedunarodniBroj extends TelefonskiBroj{
 
     @Override
     public String ispisi() {
-        return null;
+        String medunarodni = new String();
+        medunarodni = drzava + "/" + broj;
+        return  medunarodni;
     }
 
     @Override
