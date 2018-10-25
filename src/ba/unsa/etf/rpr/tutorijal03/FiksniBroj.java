@@ -2,7 +2,7 @@ package ba.unsa.etf.rpr.tutorijal03;
 
 public class FiksniBroj extends  TelefonskiBroj{
 
-
+    FiksniBroj(Grad grad, String broj)
 
     @Override
     public String ispisi() {
@@ -15,4 +15,4 @@ public class FiksniBroj extends  TelefonskiBroj{
     }
 }
 
-enum Grad{SARAJEVO, ORAŠJE, ZENICA, LIVNO, TUZLA, MOSTAR, BIHAĆ, GORAŽDE, ŠIROKI_BRIJEG, TRAVNIK, BRČKO}
+enum Grad{SARAJEVO, ORASJE, ZENICA, LIVNO, TUZLA, MOSTAR, BIHAC, GORAZDE, SIROKI_BRIJEG, TRAVNIK, BRCKO}
