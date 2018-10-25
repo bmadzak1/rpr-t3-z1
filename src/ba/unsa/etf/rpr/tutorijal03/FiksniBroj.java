@@ -2,6 +2,8 @@ package ba.unsa.etf.rpr.tutorijal03;
 
 public class FiksniBroj extends  TelefonskiBroj{
 
+    enum Grad{SARAJEVO, ORASJE, ZENICA, LIVNO, TUZLA, MOSTAR, BIHAC, GORAZDE, SIROKI_BRIJEG, TRAVNIK, BRCKO}
+
     Grad grad;
     String broj;
 
@@ -19,6 +21,6 @@ public class FiksniBroj extends  TelefonskiBroj{
     public int hashCode() {
         return 0;
     }
+
 }
 
-enum Grad{SARAJEVO, ORASJE, ZENICA, LIVNO, TUZLA, MOSTAR, BIHAC, GORAZDE, SIROKI_BRIJEG, TRAVNIK, BRCKO}
