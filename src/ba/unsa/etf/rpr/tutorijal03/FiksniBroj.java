@@ -2,7 +2,13 @@ package ba.unsa.etf.rpr.tutorijal03;
 
 public class FiksniBroj extends  TelefonskiBroj{
 
-    FiksniBroj(Grad grad, String broj)
+    Grad grad;
+    String broj;
+
+    FiksniBroj(Grad grad, String broj){
+        this.grad = grad;
+        this.broj = broj;
+    }
 
     @Override
     public String ispisi() {
