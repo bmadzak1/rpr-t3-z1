@@ -1,4 +1,14 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
-public class MedunarodniBroj {
+public class MedunarodniBroj extends TelefonskiBroj{
+
+    @Override
+    public String ispisi() {
+        return null;
+    }
+
+    @Override
+    public int hashCode() {
+        return 0;
+    }
 }
