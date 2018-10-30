@@ -14,6 +14,15 @@ public class Imenik {
         return mapa.get(ime).ispisi();
     }
 
+    String dajIme(TelefonskiBroj broj){
+        String s1 = "";
+        for(String s : mapa.keySet()) {
+            if (mapa.get(s).equals(broj))
+                s1 = s;
+        }
+        return s1;
+    }
+
 
 
 }
