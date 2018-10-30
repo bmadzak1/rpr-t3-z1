@@ -47,7 +47,16 @@ public class Imenik {
         return imena;
     }
 
-
+    Set<TelefonskiBroj> izGradaBrojevi(Grad g){
+        TreeSet<TelefonskiBroj> brojevi = new TreeSet<TelefonskiBroj>();
+        for(String s : mapa.keySet())
+            if(mapa.get(s) instanceof FiksniBroj){
+                FiksniBroj broj = (FiksniBroj) mapa.get(s);
+                if(g == broj.getGrad())
+                    brojevi.add(mapa.get(s));
+            }
+        return brojevi;
+    }
 
 
 }
