@@ -58,8 +58,9 @@ public class FiksniBroj extends  TelefonskiBroj{
     public int hashCode() {
         return grad.hashCode() + broj.hashCode();
     }
+
+    enum Grad{SARAJEVO, ORASJE, ZENICA, LIVNO, TUZLA, MOSTAR, BIHAC, GORAZDE, SIROKI_BRIJEG, TRAVNIK, BRCKO}
 }
 
-enum Grad{SARAJEVO, ORASJE, ZENICA, LIVNO, TUZLA, MOSTAR, BIHAC, GORAZDE, SIROKI_BRIJEG, TRAVNIK, BRCKO}
 
 

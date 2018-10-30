@@ -1,6 +1,8 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Set;
 
 public class Imenik {
@@ -33,6 +35,12 @@ public class Imenik {
             }
         }
         return s1;
+    }
+
+    Set<String> izGrada(Grad g){
+        Set<String> brojevi;
+        for(String s : mapa.keySet())
+            if()
     }
 
 }
