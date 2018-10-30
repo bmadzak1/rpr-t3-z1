@@ -2,18 +2,18 @@ package ba.unsa.etf.rpr.tutorijal03;
 
 public class FiksniBroj extends  TelefonskiBroj{
 
-    Grad grad;
-    String broj;
+    private Grad grad;
+    private String broj;
 
     FiksniBroj(Grad grad, String broj){
-        this.grad = grad;
+        this.setGrad(grad);
         this.broj = broj;
     }
 
     @Override
     public String ispisi() {
         String fiksni = new String();
-        switch (grad){
+        switch (getGrad()){
             case SARAJEVO:
                 fiksni += "033";
                 break;
@@ -56,7 +56,15 @@ public class FiksniBroj extends  TelefonskiBroj{
 
     @Override
     public int hashCode() {
-        return grad.hashCode() + broj.hashCode();
+        return getGrad().hashCode() + broj.hashCode();
+    }
+
+    public Grad getGrad() {
+        return grad;
+    }
+
+    public void setGrad(Grad grad) {
+        this.grad = grad;
     }
 
     enum Grad{SARAJEVO, ORASJE, ZENICA, LIVNO, TUZLA, MOSTAR, BIHAC, GORAZDE, SIROKI_BRIJEG, TRAVNIK, BRCKO}

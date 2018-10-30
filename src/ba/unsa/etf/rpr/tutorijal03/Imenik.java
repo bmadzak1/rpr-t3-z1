@@ -1,9 +1,8 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
+
+import static ba.unsa.etf.rpr.tutorijal03.FiksniBroj.Grad;
 
 public class Imenik {
     HashMap<String, TelefonskiBroj> mapa = new HashMap<String, TelefonskiBroj>();
@@ -38,9 +37,17 @@ public class Imenik {
     }
 
     Set<String> izGrada(Grad g){
-        Set<String> brojevi;
+        TreeSet<String> imena = new TreeSet<String>();
         for(String s : mapa.keySet())
-            if()
+            if(mapa.get(s) instanceof FiksniBroj){
+                FiksniBroj broj = (FiksniBroj) mapa.get(s);
+                if(g == broj.getGrad())
+                    imena.add(s);
+            }
+        return imena;
     }
+
+
+
 
 }
