@@ -4,7 +4,7 @@ import java.util.*;
 
 import static ba.unsa.etf.rpr.tutorijal03.FiksniBroj.Grad;
 
-public class Imenik {
+public class Imenik{
     HashMap<String, TelefonskiBroj> mapa = new HashMap<String, TelefonskiBroj>();
 
     void dodaj(String ime, TelefonskiBroj broj){
@@ -57,6 +57,5 @@ public class Imenik {
             }
         return brojevi;
     }
-
 
 }
