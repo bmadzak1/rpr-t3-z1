@@ -35,6 +35,4 @@ public class Imenik {
         return s1;
     }
 
-
-
 }
