@@ -23,6 +23,18 @@ public class Imenik {
         return s1;
     }
 
+    String naSlovo(char s){
+        String s1 = "";
+        int brojac = 1;
+        for(String s2 : mapa.keySet()){
+            if (s2.charAt(0) == s) {
+                s1 = brojac + ". " + s2 + " - " + mapa.get(s2) + '\n';
+                brojac++;
+            }
+        }
+        return s1;
+    }
+
 
 
 }
