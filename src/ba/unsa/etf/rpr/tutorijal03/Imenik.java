@@ -29,7 +29,7 @@ public class Imenik{
         int brojac = 1;
         for(String s2 : mapa.keySet()){
             if (s2.charAt(0) == s) {
-                s1 = brojac + ". " + s2 + " - " + mapa.get(s2) + '\n';
+                s1 = brojac + ". " + s2 + " - " + mapa.get(s2).ispisi() + '\n';
                 brojac++;
             }
         }
