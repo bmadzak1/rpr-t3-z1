@@ -50,26 +50,26 @@ public class Program {
     }
 
     static void dodavanjeTelefonskogBroja(){
-
+        System.out.println("Nije dodano jos");
     }
 
     static void dajBrojPrekoImena(){
-
+        System.out.println("Nije dodano jos");
     }
 
     static void dajImePrekoBroja(){
-
+        System.out.println("Nije dodano jos");
     }
 
     static void ispisiBrojeveSaSlovom(){
-
+        System.out.println("Nije dodano jos");
     }
 
     static void ispisiImenaIzGrada(){
-
+        System.out.println("Nije dodano jos");
     }
 
     static void ispisiBrojeveIzGrada(){
-
+        System.out.println("Nije dodano jos");
     }
 }
