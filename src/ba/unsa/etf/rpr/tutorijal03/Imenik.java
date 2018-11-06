@@ -5,7 +5,7 @@ import java.util.*;
 import static ba.unsa.etf.rpr.tutorijal03.FiksniBroj.Grad;
 
 public class Imenik{
-    HashMap<String, TelefonskiBroj> mapa = new HashMap<String, TelefonskiBroj>();
+    private HashMap<String, TelefonskiBroj> mapa = new HashMap<String, TelefonskiBroj>();
 
     void dodaj(String ime, TelefonskiBroj broj){
         mapa.put(ime, broj);
@@ -18,8 +18,9 @@ public class Imenik{
     String dajIme(TelefonskiBroj broj){
         String s1 = "";
         for(String s : mapa.keySet()) {
-            if (mapa.get(s).equals(broj))
+            if (mapa.get(s).equals(broj)) {
                 s1 = s;
+            }
         }
         return s1;
     }
@@ -38,23 +39,27 @@ public class Imenik{
 
     Set<String> izGrada(Grad g){
         TreeSet<String> imena = new TreeSet<String>();
-        for(String s : mapa.keySet())
-            if(mapa.get(s) instanceof FiksniBroj){
+        for(String s : mapa.keySet()) {
+            if (mapa.get(s) instanceof FiksniBroj) {
                 FiksniBroj broj = (FiksniBroj) mapa.get(s);
-                if(g == broj.getGrad())
+                if (g == broj.getGrad()) {
                     imena.add(s);
+                }
             }
+        }
         return imena;
     }
 
     Set<TelefonskiBroj> izGradaBrojevi(Grad g){
         TreeSet<TelefonskiBroj> brojevi = new TreeSet<TelefonskiBroj>();
-        for(String s : mapa.keySet())
-            if(mapa.get(s) instanceof FiksniBroj){
+        for(String s : mapa.keySet()) {
+            if (mapa.get(s) instanceof FiksniBroj) {
                 FiksniBroj broj = (FiksniBroj) mapa.get(s);
-                if(g == broj.getGrad())
+                if (g == broj.getGrad()) {
                     brojevi.add(mapa.get(s));
+                }
             }
+        }
         return brojevi;
     }
 

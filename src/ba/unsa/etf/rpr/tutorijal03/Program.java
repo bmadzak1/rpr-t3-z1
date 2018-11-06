@@ -5,7 +5,7 @@ import java.util.SimpleTimeZone;
 
 public class Program {
 
-    static Scanner ulaz = new Scanner(System.in);
+    private static Scanner ulaz = new Scanner(System.in);
 
     public static void main(String[] args) {
 
